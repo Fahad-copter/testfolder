@@ -1,36 +1,30 @@
-.box1 {
-	height:1200px;
-	weight:1200px;
-	background-color: orange;
-	float: left;
-	padding: 0.5em;
-	margin: 0.5em;
-	border: 2px solid black;
-	display: flex;
-}
 
+.box1{
+  width: 27%;
+  max-width: 27%;
+  height: 100%;
+  float: left;
+  border: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.5em;
+  margin: 0.5em;
+  background-color: #fa6935;
+  display: flex;
+}
 .box2 {
 	height:1200px;
 	weight:1200px;
-	background-color: orange;
+	background-color:#fa6935;
 	
 	padding: 0.5em;
 	margin: 0.5em;
 	border: 2px solid black;
-	display: flex;
+	display: inline;
 }
 
 
-.box3 {
-	height:1200px;
-	weight:1200px;
-	background-color: orange;
-	
-	padding: 0.5em;
-	margin: 0.5em;
-	border: 2px solid black;
-	display: flex;
-}
+
 .inbox1{
 	padding: 0.5em;
 	margin: 0.5em;
@@ -44,26 +38,53 @@
 .inbox2{
 	padding: 0.5em;
 	margin: 0.5em;
-	height: 600px
+	height: 40%;
 	width: 400px;
 	background-color: cyan;
 
 } 
-.inbox3{
-	padding: 0.5em;
-	margin: 0.5em;
-	height: 300px;
-	width: 200px;
-	background-color: cyan;
-	
-} 
-a {
-   text-align: right;
-   background-color: green;
-   position: fixed;
-  
 
+
+#container {
+  position: relative;
+  width: 1200px;
+  height: 1200px;
+  background:#fa6935 ;
 }
+#container div {
+  position: absolute;
+  width: 260px;
+  height: 550px;
+  background: cyan;
+}
+.top {
+  top: 0;
+}
+.right {
+  right: 0;
+}
+.bottom {
+  bottom:0;
+}
+.left {
+  left: 0;
+}
+
+
 .row {
 	display: flex;
+}
+
+@media screen and (max-width: 768px){
+	.row{
+		display: inline;
+	}
+	.box1{
+		display: inline;
+
+	}
+	.box2{
+		display: inline;
+	}
+	
 }
